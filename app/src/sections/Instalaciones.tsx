@@ -134,7 +134,7 @@ export default function Instalaciones() {
         >
           <video
             ref={videoRef}
-            src="/images/video-promocional.mp4"
+            src="images/video-promocional.mp4"
             muted
             loop
             playsInline
