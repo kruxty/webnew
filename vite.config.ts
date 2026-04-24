@@ -3,17 +3,16 @@ import react from "@vitejs/plugin-react"
 import { defineConfig } from "vite"
 import { inspectAttr } from 'kimi-plugin-inspect-react'
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  root: 'app',                    // ← AÑADIDO: le dice a Vite que todo está en app/
+  base: '/webnew/',
   plugins: [inspectAttr(), react()],
-  base: '/webnew/',  // ← AÑADE ESTA LÍNEA (nombre exacto de tu repo)
   server: {
     port: 3000,
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(__dirname, "app/src"),  // ← CORREGIDO
     },
   },
 });
