@@ -7,6 +7,7 @@ import { inspectAttr } from 'kimi-plugin-inspect-react'
 export default defineConfig({
   base: './',
   plugins: [inspectAttr(), react()],
+  base: '/webnew/',  // ← AÑADE ESTA LÍNEA (nombre exacto de tu repo)
   server: {
     port: 3000,
   },
